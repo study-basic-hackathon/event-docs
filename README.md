@@ -18,3 +18,4 @@ Marp の公式拡張（Marp for VS Code）で、編集しながらプレビュ�
 Marp for VS Code から直接 PDF / PPTX / HTML を書き出せます。
 
 - 手順: コマンドパレットで「Marp: Export slide deck...」→ フォーマット（PDF / PPTX / HTML）を選択 → 保存先を指定（例: `dist/hackathon_mc.pdf`）。
+- HTMLを/docsに出力すると、https://study-basic-hackathon.github.io/event-docs/でブラウザに表示できます。
