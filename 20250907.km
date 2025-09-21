@@ -1,0 +1,377 @@
+{
+    "root": {
+        "data": {
+            "id": "dcmcv9q3c9k0",
+            "created": 1757226674053,
+            "text": "MTG"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "dcmcvd94n8o0",
+                    "created": 1757226681735,
+                    "text": "チーム状況",
+                    "layout_right_offset": {
+                        "x": 18,
+                        "y": 30
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dcmdbuhxcl40",
+                            "created": 1757227973098,
+                            "text": "mAst",
+                            "layout_right_offset": {
+                                "x": 10,
+                                "y": -30
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dcmdbyzvfug0",
+                            "created": 1757227982891,
+                            "text": "lazy-bear"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dcmdc1rf6x40",
+                            "created": 1757227988910,
+                            "text": "rookies"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dcmdc3axig00",
+                            "created": 1757227992266,
+                            "text": "springs",
+                            "expandState": "expand",
+                            "layout_right_offset": {
+                                "x": -24,
+                                "y": 0
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "dcmcvihf5go0",
+                    "created": 1757226693120,
+                    "text": "発表日の準備",
+                    "layout_mind_offset": {
+                        "x": 260,
+                        "y": 90
+                    },
+                    "layout_right_offset": {
+                        "x": 63,
+                        "y": -50
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dcmdm4zgr480",
+                            "created": 1757228779568,
+                            "text": "connpass",
+                            "layout_right_offset": {
+                                "x": 56,
+                                "y": -18
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmdnuexpqg0",
+                                    "created": 1757228913288,
+                                    "text": "たけさんが作成",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dcme8ov6tpc0",
+                                            "created": 1757230546857,
+                                            "text": "みんなに共有"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dcmdmccmbkw0",
+                            "created": 1757228795601,
+                            "text": "賞",
+                            "layout_right_offset": {
+                                "x": 59,
+                                "y": 3
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmdml1lizk0",
+                                    "created": 1757228814526,
+                                    "text": "景品"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dcmdy6xxz3k0",
+                            "created": 1757229724200,
+                            "text": "フィードバック回収",
+                            "layout_right_offset": {
+                                "x": 87,
+                                "y": -8
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmefvcx4o80",
+                                    "created": 1757231109539,
+                                    "text": "google form"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dcmegezw8n40",
+                                            "created": 1757231152287,
+                                            "text": "内容"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "dcmegj5js200",
+                                                    "created": 1757231161336,
+                                                    "text": "各チームに対する感想"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "dcmekva8gko0",
+                                                    "created": 1757231501198,
+                                                    "text": "一番よかったチーム"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "dcmejkcrex40",
+                                            "created": 1757231399042,
+                                            "text": "調査、用意する"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "dcmekgmw67k0",
+                                                    "created": 1757231469311,
+                                                    "text": "たけさん"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dcmdzh18tww0",
+                            "created": 1757229824532,
+                            "text": "食事",
+                            "layout_right_offset": {
+                                "x": 87,
+                                "y": -17
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmdzjftedc0",
+                                    "created": 1757229829766,
+                                    "text": "飲み物、お菓子"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dcme3kayqoo0",
+                                            "created": 1757230145106,
+                                            "text": "薬局"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "dcmdzlp69og0",
+                                    "created": 1757229834686,
+                                    "text": "サンドイッチ"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dcme3aer84g0",
+                                            "created": 1757230123568,
+                                            "text": "どこで買うか？"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "dcme3dhdh280",
+                                                    "created": 1757230130256,
+                                                    "text": "たけさん検討"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dcmekzwpxn40",
+                            "created": 1757231511264,
+                            "text": "名前シール",
+                            "layout_right_offset": {
+                                "x": 82,
+                                "y": -1
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmel460fq00",
+                                    "created": 1757231520533,
+                                    "text": "井口が持ってる"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dcmelc316pk0",
+                            "created": 1757231537767,
+                            "text": "スライド",
+                            "layout_right_offset": {
+                                "x": 81,
+                                "y": 10
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmeouwi9lc0",
+                                    "created": 1757231813824,
+                                    "text": "井口"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dcmeltg8v6w0",
+                            "created": 1757231575572,
+                            "text": "動画撮影",
+                            "layout_right_offset": {
+                                "x": 16,
+                                "y": 19
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmemlr8jjc0",
+                                    "created": 1757231637186,
+                                    "text": "一旦スマホ"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dcmep0dfuoo0",
+                                            "created": 1757231825732,
+                                            "text": "森田さん？"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "dcmdnj6lwbk0",
+                    "created": 1757228888839,
+                    "text": "次のもくもく会",
+                    "layout_right_offset": {
+                        "x": 40,
+                        "y": -1
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dcmdovisxqw0",
+                            "created": 1757228994062,
+                            "text": "日にち"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmeb99s75c0",
+                                    "created": 1757230748004,
+                                    "text": "10/19"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dcmdoxegh8o0",
+                            "created": 1757228998153,
+                            "text": "場所"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dcmebbr0xc00",
+                                    "created": 1757230753400,
+                                    "text": "おおたさん"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
