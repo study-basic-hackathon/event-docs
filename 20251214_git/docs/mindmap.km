@@ -1,0 +1,261 @@
+{
+    "root": {
+        "data": {
+            "id": "ddnqhvr68v40",
+            "created": 1761022838845,
+            "text": "Gitセミナー開催"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "ddnqibkvff40",
+                    "created": 1761022873292,
+                    "text": "概要"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ddnqiejtrdk0",
+                            "created": 1761022879760,
+                            "text": "「プログラミング初学者の会」という団体を運営している"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ddnqj9gt7a80",
+                                    "created": 1761022947057,
+                                    "text": "毎月、ITエンジニアの勉強会（通称：もくもく会）を実施している"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ddnqjr92ks00",
+                                    "created": 1761022985772,
+                                    "text": "1年に2-3回、1ヶ月かけて実施するハッカソンを開催する"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ddnqk9frxvs0",
+                                            "created": 1761023025359,
+                                            "text": "初めて会った3人1チームで、サービスの内容検討から実装までを1ヶ月で実施"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ddnqlbwcv340",
+                            "created": 1761023109079,
+                            "text": "ハッカソンに参加できる人を増やすための勉強会を開催することにした"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ddnqlston740",
+                                    "created": 1761023145923,
+                                    "text": "流石に、初心者は参加が難しい"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ddnqmfpifgw0",
+                                    "created": 1761023195737,
+                                    "text": "必要なスキル",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ddnqm0xw3nc0",
+                                            "created": 1761023163592,
+                                            "text": "チームで開発するスキル"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ddnqmjmnu5c0",
+                                            "created": 1761023204272,
+                                            "text": "webアプリケーションのスキル"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ddnqn2g8uc00",
+                            "created": 1761023245242,
+                            "text": "今回は、初心者がGitを触れるようになるセミナーを開催することにした",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ddnqnmtceqo0",
+                                    "created": 1761023289570,
+                                    "text": "実施日時：2025/12/14　13:00-17:00"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ddnqulr6unc0",
+                                            "created": 1761023835812,
+                                            "text": "今日が10/21"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ddnqnv5qc940",
+                                    "created": 1761023307733,
+                                    "text": "実施場所：八丁堀（東京）"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ddnqom9hkb40",
+                                    "created": 1761023366734,
+                                    "text": "セミナー名：「【東京】今さら聞けない！Gitハンズオン」"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ddnqsc0483k0",
+                                    "created": 1761023657856,
+                                    "text": "参加予定人数：最大16名"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "ddnqq4dyfbs0",
+                    "created": 1761023484550,
+                    "text": "タスク"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ddnqqi36xy80",
+                            "created": 1761023514374,
+                            "text": "計画を作る"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ddnqqsug62g0",
+                                    "created": 1761023537790,
+                                    "text": "実施内容"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ddnqqmm70yo0",
+                                    "created": 1761023524230,
+                                    "text": "タイムスケジュール"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ddnqqxxzs9s0",
+                                            "created": 1761023548888,
+                                            "text": "13:00開始ー17:00解散"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ddnqrsd1rds0",
+                            "created": 1761023615102,
+                            "text": "計画書を作る"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ddnqvtyn18o0",
+                                    "created": 1761023932041,
+                                    "text": "マークダウンファイル"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ddnqs1k0so80",
+                            "created": 1761023635115,
+                            "text": "Connpassに投稿する内容を決める"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "ddnqrxk4fg80",
+                            "created": 1761023626414,
+                            "text": "教材を作る"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ddnqu8p9b9s0",
+                                    "created": 1761023807397,
+                                    "text": "参加者の事前準備は何が必要か"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ddnqswwsnhs0",
+                                    "created": 1761023703367,
+                                    "text": "言語は一番簡単かつわかりやすいものにする"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ddnqthxyl940",
+                            "created": 1761023749150,
+                            "text": "当日スライドを作る"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ddnqtohn2xk0",
+                                    "created": 1761023763401,
+                                    "text": "当日にスクリーン投影or画面共有orデータ共有"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
