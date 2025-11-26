@@ -68,6 +68,7 @@ section td, section th {
   padding: 0.45em 0.6em;
 }
 section pre, section code { background: rgba(255,255,255,0.06); color: white; }
+section code .hljs-string { color: white; }
 
 /* 箇条書きの間隔を少し広めに */
 section ul, section ol { line-height: 1.45; }
