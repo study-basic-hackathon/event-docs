@@ -1,14 +1,14 @@
-# 事前準備ガイド - Gitハンズオン
+# 事前準備ガイド - Git ハンズオン
 
-このドキュメントは、2025年12月14日（土）開催の「【東京】今さら聞けない！Gitハンズオン」に参加される方向けの事前準備ガイドです。
+このドキュメントは、2025 年 12 月 14 日（土）開催の「【東京】今さら聞けない！Git ハンズオン」に参加される方向けの事前準備ガイドです。
 
 ## 必須の準備事項
 
 当日スムーズに進行するため、**以下の準備を事前に完了**してください。
 
-### 1. ノートPCの持参 ✅
+### 1. ノート PC の持参 ✅
 
-- **Windows 10/11** または **macOS** を搭載したノートPC
+- **Windows 10/11** または **macOS** を搭載したノート PC
 - インターネットに接続できること
 - 充電アダプターもご持参ください
 
@@ -21,19 +21,21 @@
 1. [Git for Windows](https://gitforwindows.org/) にアクセス
 2. 「Download」ボタンをクリックしてインストーラーをダウンロード
 3. ダウンロードしたファイルを実行
-4. 基本的に**デフォルト設定のまま「Next」**を押して進めてOKです
+4. 基本的に**デフォルト設定のまま「Next」**を押して進めて OK です
 
 **インストール確認方法:**
-- コマンドプロンプトまたはPowerShellを開く
+
+- コマンドプロンプトまたは PowerShell を開く
 - 以下のコマンドを実行
   ```bash
   git --version
   ```
-- `git version 2.x.x` のように表示されればOK
+- `git version 2.x.x` のように表示されれば OK
 
 #### macOS の場合
 
-**方法1: Xcode Command Line Tools（推奨・簡単）**
+**方法 1: Xcode Command Line Tools（推奨・簡単）**
+
 1. ターミナルを開く（アプリケーション > ユーティリティ > ターミナル）
 2. 以下のコマンドを実行
    ```bash
@@ -41,21 +43,24 @@
    ```
 3. 初めての場合、インストールを促すダイアログが表示されるので「インストール」をクリック
 
-**方法2: Homebrew経由**
-1. Homebrewがインストール済みの場合
+**方法 2: Homebrew 経由**
+
+1. Homebrew がインストール済みの場合
    ```bash
    brew install git
    ```
 
 **インストール確認方法:**
+
 ```bash
 git --version
 ```
-`git version 2.x.x` のように表示されればOK
+
+`git version 2.x.x` のように表示されれば OK
 
 ---
 
-### 3. GitHubアカウントの作成 🌐
+### 3. GitHub アカウントの作成 🌐
 
 1. [GitHub](https://github.com/) にアクセス
 2. 右上の「Sign up」をクリック
@@ -75,11 +80,14 @@ git --version
 
 #### Visual Studio Code（推奨）
 
-1. [VS Code公式サイト](https://code.visualstudio.com/) にアクセス
-2. お使いのOSに合わせてダウンロード
+1. [VS Code 公式サイト](https://code.visualstudio.com/) にアクセス
+2. お使いの OS に合わせてダウンロード
 3. インストーラーを実行
 
-**その他のエディタでもOK:**
+**その他のエディタでも OK:**
+
+- Cursor
+- Antigravity
 - Sublime Text
 - Atom
 - Vim / Emacs（使い慣れている方）
@@ -95,7 +103,8 @@ git --version
 
 当日はコマンドラインを使用します。以下のコマンドを事前に試しておくと安心です。
 
-**Windows（PowerShellまたはコマンドプロンプト）:**
+**Windows（PowerShell またはコマンドプロンプト）:**
+
 ```powershell
 # 現在のディレクトリを表示
 pwd
@@ -111,6 +120,7 @@ mkdir test-folder
 ```
 
 **macOS / Linux（ターミナル）:**
+
 ```bash
 # 現在のディレクトリを表示
 pwd
@@ -125,27 +135,28 @@ cd Documents
 mkdir test-folder
 ```
 
-### 2. GitHubへのSSHキー登録（オプション）
+### 2. GitHub への SSH キー登録（オプション）
 
-当日はHTTPS接続で進める予定ですが、SSH接続の方が便利な場合があります。
+当日は HTTPS 接続で進める予定ですが、SSH 接続の方が便利な場合があります。
 設定方法は以下を参照してください（無理に事前準備する必要はありません）：
-- [GitHub SSH設定ガイド](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh)
+
+- [GitHub SSH 設定ガイド](https://docs.github.com/ja/authentication/connecting-to-github-with-ssh)
 
 ---
 
 ## トラブルシューティング
 
-### Q: Gitのインストールがうまくいかない
+### Q: Git のインストールがうまくいかない
 
 **A:** 当日その場でサポートしますので、無理に進めず当日ご相談ください。
 
-### Q: GitHubアカウント作成時にメール認証が届かない
+### Q: GitHub アカウント作成時にメール認証が届かない
 
 **A:** 迷惑メールフォルダを確認してください。それでも届かない場合は、当日別のメールアドレスで作成することも可能です。
 
 ### Q: 使用するエディタがわからない
 
-**A:** Visual Studio Codeを推奨しています。直感的で初心者にも使いやすいです。
+**A:** Visual Studio Code を推奨しています。直感的で初心者にも使いやすいです。
 
 ### Q: コマンドラインが難しそうで不安
 
@@ -155,10 +166,10 @@ mkdir test-folder
 
 ## 当日の持ち物チェックリスト
 
-- [ ] ノートPC
+- [ ] ノート PC
 - [ ] 充電アダプター
 - [ ] Git インストール済み
-- [ ] GitHubアカウント作成済み
+- [ ] GitHub アカウント作成済み
 - [ ] テキストエディタインストール済み
 - [ ] 筆記用具（メモを取る場合）
 
@@ -166,6 +177,6 @@ mkdir test-folder
 
 ## 質問がある場合
 
-事前準備で不明点がある場合は、Connpassのイベントページからお気軽にお問い合わせください。
-
+事前準備で不明点がある場合は、Connpass のイベントページからお気軽にお問い合わせください。
+<br/>
 それでは、当日お会いできることを楽しみにしています！🚀

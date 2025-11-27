@@ -3,7 +3,7 @@
 ## 概要
 
 実践演習「チーム開発体験」で使用するリポジトリの準備手順です。
-セミナー開催の**1週間前まで**に準備を完了してください。
+セミナー開催の**1 週間前まで**に準備を完了してください。
 
 ---
 
@@ -28,8 +28,8 @@
    - **Description**: `Gitハンズオン実践演習用 - コミュニティメンバー紹介サイト`
    - **Public** を選択（参加者が見やすいように）
    - ✅ **Add a README file** をチェック
-   - ✅ **Add .gitignore** → `None` でOK
-   - **License**: MIT でもOK
+   - ✅ **Add .gitignore** → `None` で OK
+   - **License**: MIT でも OK
 5. 「Create repository」をクリック
 
 ---
@@ -63,39 +63,39 @@ cp -r /path/to/templates/js .
 ```html
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>プログラミング初学者の会 - メンバー紹介</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>🚀 プログラミング初学者の会</h1>
-            <p class="subtitle">Gitハンズオンセミナー 2025/12/14</p>
-        </div>
+      <div class="container">
+        <h1>🚀 プログラミング初学者の会</h1>
+        <p class="subtitle">Gitハンズオンセミナー 2025/12/14</p>
+      </div>
     </header>
 
     <main class="container">
-        <section class="intro">
-            <h2>メンバー紹介</h2>
-            <p>今日のセミナーに参加してくれた仲間たちです！</p>
-        </section>
+      <section class="intro">
+        <h2>メンバー紹介</h2>
+        <p>今日のセミナーに参加してくれた仲間たちです！</p>
+      </section>
 
-        <section id="members" class="members-grid">
-            <!-- ここに参加者のプロフィールカードが動的に追加されます -->
-        </section>
+      <section id="members" class="members-grid">
+        <!-- ここに参加者のプロフィールカードが動的に追加されます -->
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 プログラミング初学者の会 | Git Handson Seminar</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 プログラミング初学者の会 | Git Handson Seminar</p>
+      </div>
     </footer>
 
     <script src="js/members.js"></script>
-</body>
+  </body>
 </html>
 ```
 
@@ -105,20 +105,20 @@ cp -r /path/to/templates/js .
 
 #### 3. `js/members.js` を作成
 
-JavaScriptファイルは、`templates/js/members.js` からコピーしてください。
+JavaScript ファイルは、`templates/js/members.js` からコピーしてください。
 
-**重要**: サンプルメンバーを1人残しておくと、参加者が参考にしやすくなります。
+**重要**: サンプルメンバーを 1 人残しておくと、参加者が参考にしやすくなります。
 
 #### 4. `README.md` を作成
 
 ```markdown
 # 🚀 プログラミング初学者の会 - メンバー紹介サイト
 
-Gitハンズオンセミナー 2025/12/14 の実践演習用リポジトリです。
+Git ハンズオンセミナー 2025/12/14 の実践演習用リポジトリです。
 
 ## 📖 プロジェクト概要
 
-このプロジェクトは、Gitハンズオンセミナーの参加者が実際のチーム開発フローを体験するためのWebサイトです。
+このプロジェクトは、Git ハンズオンセミナーの参加者が実際のチーム開発フローを体験するための Web サイトです。
 
 参加者一人ひとりが自分のプロフィールカードを追加し、最終的に全員の紹介ページが完成します。
 
@@ -139,21 +139,22 @@ Gitハンズオンセミナー 2025/12/14 の実践演習用リポジトリで�
 
 - ✅ リポジトリのクローン
 - ✅ ブランチの作成と切り替え
-- ✅ JavaScriptファイルの編集
+- ✅ JavaScript ファイルの編集
 - ✅ コミットとプッシュ
 - ✅ プルリクエストの作成
 
 ## 📁 プロジェクト構成
-
 ```
+
 community-site/
-├── index.html          # メインページ
+├── index.html # メインページ
 ├── css/
-│   └── style.css      # スタイルシート
+│ └── style.css # スタイルシート
 ├── js/
-│   └── members.js     # メンバーデータ（ここを編集）
-├── README.md          # このファイル
-└── MEMBER_GUIDE.md    # 詳細なガイド
+│ └── members.js # メンバーデータ(ここを編集)
+├── README.md # このファイル
+└── MEMBER_GUIDE.md # 詳細なガイド
+
 ```
 
 ## セミナー情報
@@ -179,9 +180,9 @@ git push origin main
 
 ## Step 3: 参加者をコラボレーターに招待
 
-### 方法1: 事前に招待（推奨）
+### 方法 1: 事前に招待（推奨）
 
-**セミナー前日まで**に参加者のGitHubユーザー名を収集し、招待します。
+**セミナー前日まで**に参加者の GitHub ユーザー名を収集し、招待します。
 
 #### GitHub での操作
 
@@ -189,7 +190,7 @@ git push origin main
 2. 「Settings」タブをクリック
 3. 左メニューから「Collaborators」を選択
 4. 「Add people」をクリック
-5. 参加者のGitHubユーザー名を入力
+5. 参加者の GitHub ユーザー名を入力
 6. 「Add [username] to this repository」をクリック
 
 #### 一括招待スクリプト（オプション）
@@ -208,7 +209,7 @@ while read username; do
 done < participants.txt
 ```
 
-### 方法2: 当日その場で招待
+### 方法 2: 当日その場で招待
 
 時間がかかる可能性があるため、事前招待を推奨します。
 
@@ -237,27 +238,27 @@ git commit -m "test: テストファイル追加"
 git push -u origin add-member-test
 ```
 
-GitHubでプルリクエストを作成し、マージしてテスト完了。
+GitHub でプルリクエストを作成し、マージしてテスト完了。
 
 ---
 
 ## Step 5: 当日の準備
 
-### スライドにURLを記載
+### スライドに URL を記載
 
 セミナー当日のスライドに以下を追記：
 
 ```markdown
-## リポジトリURL
+## リポジトリ URL
 
 https://github.com/study-basic-hackathon/community-site
 
-※ このURLをコピーしてクローンしてください
+※ この URL をコピーしてクローンしてください
 ```
 
-### 短縮URLの作成（オプション）
+### 短縮 URL の作成（オプション）
 
-bit.ly などで短縮URLを作成すると、参加者が入力しやすくなります。
+bit.ly などで短縮 URL を作成すると、参加者が入力しやすくなります。
 
 例: `https://bit.ly/git-handson-2025`
 
@@ -269,8 +270,8 @@ bit.ly などで短縮URLを作成すると、参加者が入力しやすくな�
 
 #### 16:40 - 演習開始
 
-1. スライドでリポジトリURLを共有
-2. グループ分け（3-4人）
+1. スライドでリポジトリ URL を共有
+2. グループ分け（3-4 人）
 3. 手順を説明
 
 #### 16:40-16:50 - 演習実施
@@ -286,7 +287,7 @@ bit.ly などで短縮URLを作成すると、参加者が入力しやすくな�
 
 ### マージの手順
 
-#### GitHub Web画面で
+#### GitHub Web 画面で
 
 1. 「Pull requests」タブを開く
 2. 各プルリクエストを開く
@@ -295,7 +296,7 @@ bit.ly などで短縮URLを作成すると、参加者が入力しやすくな�
 5. 「Confirm merge」をクリック
 6. 「Delete branch」をクリック（任意）
 
-#### 複数のPRを効率的に処理
+#### 複数の PR を効率的に処理
 
 ```bash
 # GitHub CLI を使用（事前にインストール必要）
@@ -307,31 +308,35 @@ gh pr merge [番号] --merge
 
 ## トラブルシューティング
 
-### 問題1: 参加者が招待を受け取っていない
+### 問題 1: 参加者が招待を受け取っていない
 
 **対処**:
+
 - その場で招待を送る
 - 迷惑メールフォルダを確認してもらう
 - GitHub の Notifications を確認してもらう
 
-### 問題2: プッシュ時に権限エラー
+### 問題 2: プッシュ時に権限エラー
 
 **対処**:
+
 - コラボレーターに追加されているか確認
-- GitHubにログインしているか確認
+- GitHub にログインしているか確認
 - 認証情報が正しいか確認
 
-### 問題3: ブランチ名が被った
+### 問題 3: ブランチ名が被った
 
 **対処**:
+
 - ブランチ名を変更してもらう
   ```bash
   git branch -m add-member-yamada-2
   ```
 
-### 問題4: 同じファイル名で競合
+### 問題 4: 同じファイル名で競合
 
 **対処**:
+
 - ファイル名を変更してもらう
   ```bash
   mv members/yamada.md members/yamada-taro.md
@@ -356,13 +361,13 @@ gh pr merge [番号] --merge
 
 ## チェックリスト
 
-### 1週間前まで
+### 1 週間前まで
 
 - [ ] リポジトリ作成
 - [ ] 初期ファイル作成（README、CONTRIBUTING、example）
 - [ ] 動作確認（テストプルリクエスト）
 
-### 3日前まで
+### 3 日前まで
 
 - [ ] 参加者リスト取得
 - [ ] コラボレーター招待送信
@@ -370,13 +375,13 @@ gh pr merge [番号] --merge
 ### 前日
 
 - [ ] 招待が届いているか確認
-- [ ] スライドにURL記載
-- [ ] 短縮URL作成（オプション）
+- [ ] スライドに URL 記載
+- [ ] 短縮 URL 作成（オプション）
 
 ### 当日
 
 - [ ] リポジトリが正常にアクセスできるか確認
-- [ ] 自分のPCでクローンテスト
+- [ ] 自分の PC でクローンテスト
 - [ ] プルリクエストのマージ権限確認
 
 ---
@@ -392,7 +397,7 @@ gh pr merge [番号] --merge
 ### プルリクエストのマージ戦略
 
 - **Merge commit**: すべてのコミット履歴を保持（推奨）
-- **Squash and merge**: 複数コミットを1つにまとめる
+- **Squash and merge**: 複数コミットを 1 つにまとめる
 - **Rebase and merge**: 履歴を一直線にする
 
 今回は **Merge commit** で問題ありません。
