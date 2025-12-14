@@ -173,6 +173,18 @@ function updateMemberCount() {
 document.addEventListener("DOMContentLoaded", () => {
   displayMembers();
   updateMemberCount();
+
+  // おみくじのイベントリスナーを追加
+  const drawButton = document.getElementById("draw-omikuji");
+  const resultDiv = document.getElementById("omikuji-result");
+
+  if (drawButton && resultDiv) {
+    drawButton.addEventListener("click", () => {
+      const fortunes = ["大吉", "中吉", "小吉", "吉", "凶"];
+      const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+      resultDiv.textContent = `今日の運勢: ${randomFortune}`;
+    });
+  }
 });
 
 // 開発者向け：コンソールで簡単にメンバーを追加できるようにする
