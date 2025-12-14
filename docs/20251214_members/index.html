@@ -8,10 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>プログラミング初学者の会 - メンバー紹介</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      (function () {
+        try {
+          const saved = localStorage.getItem("theme");
+          if (saved) {
+            document.documentElement.setAttribute("data-theme", saved);
+          } else if (
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
   </head>
   <body>
     <header>
       <div class="container">
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="ダークモード切替">
+          <span class="label">切替</span>
+          <span class="icon">🌙</span>
+        </button>
         <h1>🚀 プログラミング初学者の会</h1>
         <p class="subtitle">Gitハンズオンセミナー 2025/12/14</p>
       </div>
@@ -21,6 +42,21 @@
       <section class="intro">
         <h2>メンバー紹介</h2>
         <p>今日のセミナーに参加してくれた仲間たちです！</p>
+      </section>
+
+      <section class="tag-filter">
+        <h2>タグでフィルター</h2>
+        <div id="tag-buttons" class="tag-buttons">
+          <!-- タグボタンがここに追加されます -->
+        </div>
+        <button id="clear-filter" class="clear-filter">フィルター解除</button>
+      </section>
+
+      <section class="omikuji">
+        <h2>おみくじ</h2>
+        <p>今日の運勢を引いてみましょう！</p>
+        <button id="draw-omikuji">おみくじを引く</button>
+        <div id="omikuji-result" style="margin-top: 1rem; font-size: 1.5rem; font-weight: bold;"></div>
       </section>
 
       <section id="members" class="members-grid">
@@ -41,6 +77,7 @@
       </div>
     </footer>
 
+    <script src="js/darkmode.js"></script>
     <script src="js/members.js"></script>
   </body>
 </html>
