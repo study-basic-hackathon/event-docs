@@ -71,7 +71,63 @@ const members = [
   // },
 ];
 
-// 下記の関数は編集しないでください。
+// 現在のフィルター状態
+let activeFilter = null;
+
+// すべてのタグを取得する関数
+function getAllTags() {
+  const tagSet = new Set();
+  members.forEach(member => {
+    tagSet.add(member.language);
+    member.hobbies.forEach(hobby => tagSet.add(hobby));
+  });
+  return Array.from(tagSet).sort();
+}
+
+// タグボタンを生成する関数
+function generateTagButtons() {
+  const tagButtonsContainer = document.getElementById("tag-buttons");
+  if (!tagButtonsContainer) return;
+
+  const tags = getAllTags();
+  tagButtonsContainer.innerHTML = "";
+
+  tags.forEach(tag => {
+    const button = document.createElement("button");
+    button.className = "tag-button";
+    button.textContent = tag;
+    button.addEventListener("click", () => filterMembers(tag));
+    tagButtonsContainer.appendChild(button);
+  });
+}
+
+// メンバーをフィルタリングする関数
+function filterMembers(tag) {
+  activeFilter = tag;
+
+  // ボタンのアクティブ状態を更新
+  const buttons = document.querySelectorAll(".tag-button");
+  buttons.forEach(button => {
+    if (button.textContent === tag) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+
+  displayMembers();
+}
+
+// フィルターを解除する関数
+function clearFilter() {
+  activeFilter = null;
+
+  // ボタンのアクティブ状態を解除
+  const buttons = document.querySelectorAll(".tag-button");
+  buttons.forEach(button => button.classList.remove("active"));
+
+  displayMembers();
+}
 /**
  * メンバーカードのHTMLを生成する関数
  * @param {Object} member - メンバー情報オブジェクト
@@ -83,11 +139,20 @@ function createMemberCard(member) {
     .map((hobby) => `<li>${hobby}</li>`)
     .join("");
 
+  // タグを生成（言語と趣味）
+  const tags = [member.language, ...member.hobbies];
+  const tagsHtml = tags
+    .map((tag) => `<span class="tag">${tag}</span>`)
+    .join("");
+
   return `
         <div class="member-card">
             <div class="member-header">
                 <div class="member-icon">${member.icon}</div>
                 <h3>${member.name}</h3>
+            </div>
+            <div class="member-tags">
+                ${tagsHtml}
             </div>
             <div class="member-info">
                 <p><strong>📍 地域:</strong> ${member.location}</p>
@@ -125,19 +190,27 @@ function displayMembers() {
   // 既存のコンテンツをクリア
   membersContainer.innerHTML = "";
 
+  // フィルタリングされたメンバーを取得
+  const filteredMembers = activeFilter
+    ? members.filter(member =>
+        member.language === activeFilter ||
+        member.hobbies.includes(activeFilter)
+      )
+    : members;
+
   // メンバーが0人の場合のメッセージ
-  if (members.length === 0) {
+  if (filteredMembers.length === 0) {
     membersContainer.innerHTML = `
             <div style="grid-column: 1/-1; text-align: center; padding: 3rem; background: white; border-radius: 10px;">
-                <h3 style="color: #667eea; margin-bottom: 1rem;">まだメンバーが登録されていません</h3>
-                <p>あなたが最初のメンバーになりましょう！</p>
+                <h3 style="color: #667eea; margin-bottom: 1rem;">該当するメンバーが見つかりません</h3>
+                <p>他のタグをお試しください。</p>
             </div>
         `;
     return;
   }
 
   // 各メンバーのカードを生成して追加
-  members.forEach((member) => {
+  filteredMembers.forEach((member) => {
     membersContainer.innerHTML += createMemberCard(member);
   });
 
@@ -190,12 +263,41 @@ function updateCurrentTime() {
   const formattedTime = formatter.format(now);
 
   timeElement.textContent = `🕐 ${formattedTime}`;
+// 天気情報を取得する関数
+async function fetchWeather() {
+  try {
+    const response = await fetch('https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json');
+    const data = await response.json();
+    const currentForecast = data[0];
+    const weatherArea = currentForecast.timeSeries[0].areas[0]; // 東京地方
+    const tempArea = currentForecast.timeSeries[2].areas[0]; // 東京の気温
+
+    const weather = weatherArea.weathers[0]; // 今日の天気
+    const temp = tempArea.temps[0]; // 現在の気温
+
+    document.getElementById('weather-info').innerHTML = `
+      <p><strong>場所:</strong> 東京</p>
+      <p><strong>今日の天気:</strong> ${weather}</p>
+      <p><strong>現在の気温:</strong> ${temp}℃</p>
+    `;
+  } catch (error) {
+    document.getElementById('weather-info').innerHTML = '<p>天気情報の取得に失敗しました。</p>';
+    console.error('Error fetching weather:', error);
+  }
 }
 
 // ページ読み込み時にメンバーを表示
 document.addEventListener("DOMContentLoaded", () => {
+  generateTagButtons();
   displayMembers();
   updateMemberCount();
+  fetchWeather();
+
+  // フィルター解除ボタンのイベントリスナー
+  const clearFilterButton = document.getElementById("clear-filter");
+  if (clearFilterButton) {
+    clearFilterButton.addEventListener("click", clearFilter);
+  }
 
   // 現在時刻を表示し、1秒ごとに更新
   updateCurrentTime();
