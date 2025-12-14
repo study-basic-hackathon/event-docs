@@ -14,6 +14,16 @@ const members = [
     message: "東京たのちぃ。。よろしくお願いします！",
   },
 
+{
+    name: "テクテク⭐️アキレス腱治療中",
+    icon: "🩼",
+    location: "東京都",
+    experience: "0.5年",
+    language: "JavaScript",
+    goal: "GitとGitHubを使いこなせるようになりたいのです",
+    hobbies: ["AIいぢり〜", "生ホッケを食すこと"],
+    message: "無職透明なおとこです",
+  }
   // 下記に自分の情報を追加してください。
   // 例：
   // {
