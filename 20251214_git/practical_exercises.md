@@ -77,6 +77,10 @@ event-docs/
 │       └── js/
 ├── slides/                # 過去のイベントスライド
 ├── docs/                  # 公開用HTML（GitHub Pages）
+│   └── 20251214_members/  # メンバー紹介ページ（公開中）
+│       ├── index.html
+│       ├── css/
+│       └── js/
 └── README.md              # リポジトリの説明
 ```
 
@@ -90,6 +94,7 @@ event-docs/
 | `20251214_git/practical_exercises.md` | この実践演習資料 |
 | `20251214_git/handson_guide.md` | ハンズオン①②③のガイド |
 | `20251214_git/templates/` | 演習1で使うテンプレート |
+| `docs/20251214_members/` | 公開中のメンバー紹介ページ |
 | `docs/` | GitHub Pagesで公開 |
 
 ---
