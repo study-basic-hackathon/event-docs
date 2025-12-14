@@ -77,9 +77,9 @@ let activeFilter = null;
 // すべてのタグを取得する関数
 function getAllTags() {
   const tagSet = new Set();
-  members.forEach(member => {
+  members.forEach((member) => {
     tagSet.add(member.language);
-    member.hobbies.forEach(hobby => tagSet.add(hobby));
+    member.hobbies.forEach((hobby) => tagSet.add(hobby));
   });
   return Array.from(tagSet).sort();
 }
@@ -92,7 +92,7 @@ function generateTagButtons() {
   const tags = getAllTags();
   tagButtonsContainer.innerHTML = "";
 
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     const button = document.createElement("button");
     button.className = "tag-button";
     button.textContent = tag;
@@ -107,7 +107,7 @@ function filterMembers(tag) {
 
   // ボタンのアクティブ状態を更新
   const buttons = document.querySelectorAll(".tag-button");
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     if (button.textContent === tag) {
       button.classList.add("active");
     } else {
@@ -124,7 +124,7 @@ function clearFilter() {
 
   // ボタンのアクティブ状態を解除
   const buttons = document.querySelectorAll(".tag-button");
-  buttons.forEach(button => button.classList.remove("active"));
+  buttons.forEach((button) => button.classList.remove("active"));
 
   displayMembers();
 }
@@ -192,9 +192,10 @@ function displayMembers() {
 
   // フィルタリングされたメンバーを取得
   const filteredMembers = activeFilter
-    ? members.filter(member =>
-        member.language === activeFilter ||
-        member.hobbies.includes(activeFilter)
+    ? members.filter(
+        (member) =>
+          member.language === activeFilter ||
+          member.hobbies.includes(activeFilter)
       )
     : members;
 
@@ -263,10 +264,13 @@ function updateCurrentTime() {
   const formattedTime = formatter.format(now);
 
   timeElement.textContent = `🕐 ${formattedTime}`;
+}
 // 天気情報を取得する関数
 async function fetchWeather() {
   try {
-    const response = await fetch('https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json');
+    const response = await fetch(
+      "https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json"
+    );
     const data = await response.json();
     const currentForecast = data[0];
     const weatherArea = currentForecast.timeSeries[0].areas[0]; // 東京地方
@@ -275,14 +279,15 @@ async function fetchWeather() {
     const weather = weatherArea.weathers[0]; // 今日の天気
     const temp = tempArea.temps[0]; // 現在の気温
 
-    document.getElementById('weather-info').innerHTML = `
+    document.getElementById("weather-info").innerHTML = `
       <p><strong>場所:</strong> 東京</p>
       <p><strong>今日の天気:</strong> ${weather}</p>
       <p><strong>現在の気温:</strong> ${temp}℃</p>
     `;
   } catch (error) {
-    document.getElementById('weather-info').innerHTML = '<p>天気情報の取得に失敗しました。</p>';
-    console.error('Error fetching weather:', error);
+    document.getElementById("weather-info").innerHTML =
+      "<p>天気情報の取得に失敗しました。</p>";
+    console.error("Error fetching weather:", error);
   }
 }
 
