@@ -99,6 +99,20 @@ event-docs/
 
 ---
 
+## GitHub Copilot のインストール
+
+VS Code で GitHub Copilot を使うと、コーディングを効率化できます。
+
+### インストール手順
+
+1. VS Code を開く
+2. サイドバーの拡張機能アイコン（または Cmd+Shift+X）をクリック
+3. 検索欄に「**GitHub Copilot**」と入力
+4. 「**GitHub Copilot**」をインストール
+5. GitHubアカウントでサインインを求められるので、ログインする
+
+---
+
 ## Marp でスライドをプレビュー
 
 VS Code で Marp 拡張機能を使うと、スライドを確認できます。
