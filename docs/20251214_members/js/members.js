@@ -14,7 +14,29 @@ const members = [
     message: "東京たのちぃ。。よろしくお願いします！",
   },
 
- {
+
+ 
+  {
+    name: "いぐいぐ2",
+    icon: "🐓",
+    location: "東京都",
+    experience: "10年",
+    language: "Python",
+    goal: "Gitを使いこなせるようになりたい！",
+    hobbies: ["プログラミング", "もつ焼き探索",  "ギター"],
+    message: "東京たのちぃ。。よろしくお願いします！",
+  },
+  {
+    name: "てらちゃん",
+    icon: "🐥",
+    location: "埼玉県",
+    experience: "2ヶ月",
+    language: "Java",
+    goal: "Gitを理解できるようになりたい！",
+    hobbies: ["ゲーム" , "ホラー映画鑑賞"],
+    message: "東京は人多いぃ。。よろしくお願いします！",
+  },
+  {
     name: "euporia25",
     icon: "🦜",
     location: "千葉県",
@@ -24,9 +46,7 @@ const members = [
     hobbies: ["画像生成", "タバコ"],
     message: "タバコは酸素",
   }
- 
- 
-  // 下記に自分の情報を追加してください。
+ // 下記に自分の情報を追加してください。
   // 例：
   // {
   //     name: "あなたの名前",
