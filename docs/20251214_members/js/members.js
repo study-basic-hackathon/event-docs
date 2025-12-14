@@ -242,11 +242,35 @@ function updateMemberCount() {
   }
 }
 
+// 天気情報を取得する関数
+async function fetchWeather() {
+  try {
+    const response = await fetch('https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json');
+    const data = await response.json();
+    const currentForecast = data[0];
+    const weatherArea = currentForecast.timeSeries[0].areas[0]; // 東京地方
+    const tempArea = currentForecast.timeSeries[2].areas[0]; // 東京の気温
+
+    const weather = weatherArea.weathers[0]; // 今日の天気
+    const temp = tempArea.temps[0]; // 現在の気温
+
+    document.getElementById('weather-info').innerHTML = `
+      <p><strong>場所:</strong> 東京</p>
+      <p><strong>今日の天気:</strong> ${weather}</p>
+      <p><strong>現在の気温:</strong> ${temp}℃</p>
+    `;
+  } catch (error) {
+    document.getElementById('weather-info').innerHTML = '<p>天気情報の取得に失敗しました。</p>';
+    console.error('Error fetching weather:', error);
+  }
+}
+
 // ページ読み込み時にメンバーを表示
 document.addEventListener("DOMContentLoaded", () => {
   generateTagButtons();
   displayMembers();
   updateMemberCount();
+  fetchWeather();
 
   // フィルター解除ボタンのイベントリスナー
   const clearFilterButton = document.getElementById("clear-filter");
