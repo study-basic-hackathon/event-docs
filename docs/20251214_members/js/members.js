@@ -15,6 +15,8 @@ const members = [
   },
 
 
+  // 下記に自分の情報を追加してください。
+
  
   {
     name: "いぐいぐ2",
@@ -26,6 +28,17 @@ const members = [
     hobbies: ["プログラミング", "もつ焼き探索",  "ギター"],
     message: "東京たのちぃ。。よろしくお願いします！",
   },
+  { 
+    name: "テクテク⭐️アキレス腱治療中",
+    icon: "🩼",
+    location: "東京都",
+    experience: "0.5年",
+    language: "JavaScript",
+    goal: "GitとGitHubを使いこなせるようになりたいのです",
+    hobbies: ["AIいぢり〜", "生ホッケを食すこと"],
+    message: "無職透明なおとこです",
+  },
+
   {
     name: "てらちゃん",
     icon: "🐥",
