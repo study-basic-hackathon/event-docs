@@ -13,6 +13,16 @@ const members = [
     hobbies: ["プログラミング", "もつ焼き探索"],
     message: "東京たのちぃ。。よろしくお願いします！",
   },
+  {
+    name: "てらちゃん",
+    icon: "🐥",
+    location: "埼玉県",
+    experience: "2ヶ月",
+    language: "Java",
+    goal: "Gitを理解できるようになりたい！",
+    hobbies: ["ゲーム" , "ホラー映画鑑賞"],
+    message: "東京は人多いぃ。。よろしくお願いします！",
+  },
 
   // 下記に自分の情報を追加してください。
   // 例：
