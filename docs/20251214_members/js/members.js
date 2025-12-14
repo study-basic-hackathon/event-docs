@@ -14,7 +14,21 @@ const members = [
     message: "東京たのちぃ。。よろしくお願いします！",
   },
 
-{
+
+  // 下記に自分の情報を追加してください。
+
+ 
+  {
+    name: "いぐいぐ2",
+    icon: "🐓",
+    location: "東京都",
+    experience: "10年",
+    language: "Python",
+    goal: "Gitを使いこなせるようになりたい！",
+    hobbies: ["プログラミング", "もつ焼き探索",  "ギター"],
+    message: "東京たのちぃ。。よろしくお願いします！",
+  },
+  { 
     name: "テクテク⭐️アキレス腱治療中",
     icon: "🩼",
     location: "東京都",
@@ -23,8 +37,29 @@ const members = [
     goal: "GitとGitHubを使いこなせるようになりたいのです",
     hobbies: ["AIいぢり〜", "生ホッケを食すこと"],
     message: "無職透明なおとこです",
+  },
+
+  {
+    name: "てらちゃん",
+    icon: "🐥",
+    location: "埼玉県",
+    experience: "2ヶ月",
+    language: "Java",
+    goal: "Gitを理解できるようになりたい！",
+    hobbies: ["ゲーム" , "ホラー映画鑑賞"],
+    message: "東京は人多いぃ。。よろしくお願いします！",
+  },
+  {
+    name: "euporia25",
+    icon: "🦜",
+    location: "千葉県",
+    experience: "０年",
+    language: "Python",
+    goal: "Gitを知ること",
+    hobbies: ["画像生成", "タバコ"],
+    message: "タバコは酸素",
   }
-  // 下記に自分の情報を追加してください。
+ // 下記に自分の情報を追加してください。
   // 例：
   // {
   //     name: "あなたの名前",
