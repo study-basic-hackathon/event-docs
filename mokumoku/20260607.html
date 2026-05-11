@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700;900&family=Noto+Sans+JP:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'BananaSlip';
+            src: url('../assets/YDW_bananaslip_plus_240809/YDWbananaslipplus.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: block;
+        }
+
+        :root {
+            --bg-white: #fdfdff;
+            --text-blue: #1c315e; /* 少し濃くして視認性をアップ */
+            /* 画像から抽出した高精度カラー */
+            --color-hash: #b59541;   /* # のくすんだゴールド */
+            --color-ha: #2a8373;     /* ハ：深みのあるエメラルド */
+            --color-tsu: #b8103c;    /* ッ：落ち着いた紅色 */
+            --color-ka: #d47031;     /* カ：赤みの強いテラコッタ */
+            --color-so: #3b5a9a;     /* ソ：落ち着いたロイヤルブルー */
+            --color-n: #c9b144;      /* ン：明るいマスタードゴールド */
+            --gold: #c9b144;         /* location用 */
+            --dot-color: #e5e5e5;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Noto Sans JP', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        }
+
+        .banner {
+            width: 800px;
+            height: 320px;
+            background-color: var(--bg-white);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        /* 背景のドット装飾（形を制限して配置） */
+        .dots {
+            position: absolute;
+            inset: 0; /* 親要素いっぱいに広げる */
+            background-image: radial-gradient(var(--dot-color) 2px, transparent 2px);
+            background-size: 20px 20px;
+            z-index: 1;
+            
+            /* マスクを使って左上と右下だけに表示させる */
+            -webkit-mask-image: 
+                radial-gradient(circle at 10% 10%, black 0%, transparent 40%),
+                radial-gradient(circle at 95% 50%, black 0%, transparent 35%);
+            mask-image: 
+                radial-gradient(circle at 5% 5%, black 0%, transparent 30%),
+                radial-gradient(circle at 20% 0%, black 0%, transparent 25%),
+                radial-gradient(circle at 100% 40%, black 0%, transparent 30%),
+                radial-gradient(circle at 90% 60%, black 0%, transparent 25%);
+            
+            opacity: 0.7; /* 少し薄くして馴染ませる */
+        }
+
+        /* 背景画像 */
+        .bg-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background-image: url('../assets/hero-bg-top_pc.webp');
+            background-size: cover;
+            background-position: center top;
+            z-index: 2;
+        }
+
+        .bg-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background-image: url('../assets/hero-bg-bottom_pc.webp');
+            background-size: cover;
+            background-position: center bottom;
+            z-index: 2;
+        }
+
+        /* コンテンツ */
+        .content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: var(--text-blue);
+        }
+
+        .title {
+            font-size: 78px; /* 少し大きく */
+            font-weight: 700;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'BananaSlip', sans-serif !important;
+            letter-spacing: -0.1em; /* 文字間を詰める */
+        }
+        
+        .title span { margin: 0 1px; }
+        /* 各文字のグラデーション再現 */
+        .hash { color: var(--color-hash); font-size: 0.85em; margin-right: 8px !important; }
+
+        /* 文字ごとに微細なグラデーションをかけると再現性が跳ね上がります */
+        .c1 { color: var(--color-ha); }
+        .c2 { color: var(--color-tsu); }
+        /* カのグラデーション */
+        .c3 {
+            background: linear-gradient(to bottom, #e0854d, #d47031);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .c4 { color: var(--color-so); }
+        .c5 { color: var(--color-n); }    
+
+        .subtitle {
+            font-size: 24px;
+            margin: 12px 0;
+            font-weight: 700;
+            color: #333; /* 完全に真っ黒より少し抜く */
+        }
+
+        .date-time {
+            font-size: 32px;
+            font-weight: 800;
+            margin: 10px 0;
+            letter-spacing: 0.02em;
+        }
+
+        .location {
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .sponsors {
+            font-size: 11px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .logo-icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: -10px;
+            right: -55px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="dots"></div>
+        
+        <div class="bg-top"></div>
+        <div class="bg-bottom"></div>
+
+        <div class="content">
+            <h1 class="title">
+                <span class="hash">#</span>
+                <span class="c1">も</span><span class="c2">く</span><span class="c3">も</span><span class="c4">く</span><span class="c5" style="position: relative;">
+                    会
+                    <img src="../assets/icon.webp" alt="logo" class="logo-icon">
+                </span>
+            </h1>
+            <p class="subtitle">“ プログラミング・ITの知識をつける ”</p>
+            
+            <div class="date-time">
+                2026.06.07 <span style="font-size: 22px;">(日)</span> 14:00 - 17:00
+            </div>
+
+            <div class="location">
+                <span style="color: var(--gold);">📍</span> 東京都文京区本郷2-28-1 (針谷第二ビル4F)
+            </div>
+
+            <div class="sponsors">
+                協賛：株式会社SOARIG、株式会社SHOU
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
