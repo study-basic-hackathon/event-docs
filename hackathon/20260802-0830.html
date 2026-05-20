@@ -140,15 +140,22 @@
             color: #333; /* 完全に真っ黒より少し抜く */
         }
 
+        .dates-container {
+            display: inline-block;
+            text-align: left;
+        }
+
         .date-time {
             font-size: 24px;
             font-weight: 800;
-            margin: 8px 0;
+            margin: 2px 0;
             letter-spacing: 0.02em;
         }
 
-        .date-time + .date-time {
-            margin-top: 2px;
+        .date-number {
+            display: inline-block;
+            width: 1.3em;
+            text-align: left;
         }
 
         .location {
@@ -190,11 +197,13 @@
             </h1>
             <p class="subtitle">“ プログラミング・ITの知識をつける ”</p>
             
-            <div class="date-time">
-                ❶ 2026.08.02 <span style="font-size: 17px;">(日)</span> 13:00 - 18:00
-            </div>
-            <div class="date-time">
-                ❷ 2026.08.30 <span style="font-size: 17px;">(日)</span> 14:00 - 17:00
+            <div class="dates-container">
+                <div class="date-time">
+                    <span class="date-number">❶</span> 2026.08.02 <span style="font-size: 17px;">(日)</span> 13:00 - 18:00 <span style="font-size: 17px;">(チーム作り・アイデア出し)</span>
+                </div>
+                <div class="date-time">
+                    <span class="date-number">❷</span> 2026.08.30 <span style="font-size: 17px;">(日)</span> 14:00 - 17:00 <span style="font-size: 17px;">(成果発表会)</span>
+                </div>
             </div>
 
             <div class="location">
