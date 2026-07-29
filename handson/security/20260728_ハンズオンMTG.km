@@ -1,0 +1,373 @@
+{
+    "root": {
+        "data": {
+            "id": "dka98gjdra00",
+            "created": 1785246971220,
+            "text": "ハンズオン"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "dka98mm0gio0",
+                    "created": 1785246984440,
+                    "text": "講義",
+                    "layout_right_offset": {
+                        "x": 48,
+                        "y": 212
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dka99nysyb40",
+                            "created": 1785247065754,
+                            "text": "イントロダクション",
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dka997p75q00",
+                            "created": 1785247030345,
+                            "text": "ポートスキャンの説明"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dka99q3xbcw0",
+                            "created": 1785247070417,
+                            "text": "ディレクトリ（Webサイトのディレクトリ検索）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dka9o2ua81s0",
+                            "created": 1785248195231,
+                            "text": "SQLインジェクション"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dka9oa2lb340",
+                            "created": 1785248210971,
+                            "text": "XSS"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "dka98qnx6ts0",
+                    "created": 1785246993262,
+                    "text": "実習",
+                    "layout_right_offset": {
+                        "x": -53,
+                        "y": 187
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dka9ep4zl0w0",
+                            "created": 1785247460126,
+                            "text": "たけさんと並走",
+                            "layout_right_offset": {
+                                "x": 12,
+                                "y": 0
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dka9dm3cz7k0",
+                                    "created": 1785247375133,
+                                    "text": "環境準備",
+                                    "layout_right_offset": {
+                                        "x": 6,
+                                        "y": -12
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dka9ds9wfsw0",
+                                            "created": 1785247388589,
+                                            "text": "DVWAのセットアップ"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "dka9psz9uhs0",
+                                            "created": 1785248330493,
+                                            "text": "CTFのセットアップ"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "dka9lr4k6jk0",
+                                    "created": 1785248013002,
+                                    "text": "DVWA",
+                                    "layout_right_offset": {
+                                        "x": 5,
+                                        "y": -3
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dka9lwxycww0",
+                                            "created": 1785248025664,
+                                            "text": "SQLインジェクション"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "dka9m3yrzzs0",
+                                            "created": 1785248040951,
+                                            "text": "XSS"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "dka9m6oaqzk0",
+                                            "created": 1785248046848,
+                                            "text": "その他？"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dka9f5g03qw0",
+                            "created": 1785247495620,
+                            "text": "個人のレベルに合わせて進める",
+                            "layout_right_offset": {
+                                "x": 7,
+                                "y": 63
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dka9fbo00rk0",
+                                    "created": 1785247509164,
+                                    "text": "CTF",
+                                    "layout_right_offset": {
+                                        "x": 35,
+                                        "y": 117
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dka9h6t480w0",
+                                            "created": 1785247655318,
+                                            "text": "ZIPのブルートフォース"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "dka9e3sxlqo0",
+                                    "created": 1785247413684,
+                                    "text": "ディレクトリのブルートフォースのハンズオン",
+                                    "layout_right_offset": {
+                                        "x": 17,
+                                        "y": -71
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dka9ftx3jf40",
+                                            "created": 1785247548897,
+                                            "text": "ゴーバスター"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "dka9dwxtrhs0",
+                                    "created": 1785247398744,
+                                    "text": "ポートスキャンのハンズオン",
+                                    "layout_right_offset": {
+                                        "x": 30,
+                                        "y": -47
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dka9glqzmso0",
+                                            "created": 1785247609477,
+                                            "text": "nmap"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "dka98xt3jpk0",
+                    "created": 1785247008813,
+                    "text": "時間",
+                    "layout_right_offset": {
+                        "x": 26,
+                        "y": -594
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dka9937us1k0",
+                            "created": 1785247020589,
+                            "text": "3時間"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dka9995wt1c0",
+                                    "created": 1785247033532,
+                                    "text": "講義1時間"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dka99co5y480",
+                                    "created": 1785247041166,
+                                    "text": "実習2時間"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "dka9os3hrx40",
+                    "created": 1785248250207,
+                    "text": "ToDo",
+                    "layout_right_offset": {
+                        "x": 5,
+                        "y": 160
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dka9ovflcy80",
+                            "created": 1785248257469,
+                            "text": "DVWA調査"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dka9ozlqaxk0",
+                            "created": 1785248266547,
+                            "text": "スライド作成"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dka9p2vaou80",
+                                    "created": 1785248273656,
+                                    "text": "たけさん"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dka9p5gkxvk0",
+                            "created": 1785248279297,
+                            "text": "CTFの準備"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dka9pf676ag0",
+                                    "created": 1785248300437,
+                                    "text": "たけさん"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dka9q9y243c0",
+                            "created": 1785248367425,
+                            "text": "実施日の検討"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dka9ub1huog0",
+                            "created": 1785248683266,
+                            "text": "イベント文作成"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "dka9utg8wh40",
+                            "created": 1785248723340,
+                            "text": "実習の予行"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dka9uzwgth40",
+                                    "created": 1785248737382,
+                                    "text": "Windows"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dka9v25r22g0",
+                                    "created": 1785248742297,
+                                    "text": "Mac"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
