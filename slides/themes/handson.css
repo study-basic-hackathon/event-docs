@@ -1,0 +1,239 @@
+/* @theme handson */
+@import 'default';
+
+/*
+ * ハンズオン用ライトテーマ
+ * 白地 + ティール/スカイブルーの明るいトーン
+ */
+:root {
+  --hs-bg: #ffffff;          /* ベース（白） */
+  --hs-bg-soft: #f4f9fa;     /* 薄いティールグレー */
+  --hs-fg: #23303d;          /* 本文（ダークスレート） */
+  --hs-muted: #6b7a8c;       /* 補助文字 */
+  --hs-accent: #0ea5a0;      /* アクセント（ティール） */
+  --hs-accent-2: #3d7dd6;    /* サブアクセント（ブルー） */
+  --hs-warn: #e8853a;        /* 注意（アンバー） */
+  --hs-danger: #d94f4f;      /* 警告（レッド） */
+  --hs-line: #dbe4ea;        /* 罫線 */
+  --hs-bar-height: 10px;     /* 上部アクセントバーの太さ */
+}
+
+/* ===== スライド全体 ===== */
+section {
+  background: var(--hs-bg);
+  color: var(--hs-fg);
+  font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", system-ui, sans-serif;
+  /* 上部に細いアクセントバー */
+  box-shadow: inset 0 var(--hs-bar-height) 0 0 var(--hs-accent);
+  padding-top: 60px;
+}
+
+/* ===== 見出し ===== */
+section h1 {
+  color: var(--hs-fg);
+  font-size: 1.7em;
+  border-bottom: 4px solid var(--hs-accent);
+  padding-bottom: 0.2em;
+}
+section h2 {
+  color: var(--hs-fg);
+  border-left: 0.35rem solid var(--hs-accent);
+  padding-left: 0.6rem;
+}
+section h3 {
+  color: var(--hs-accent-2);
+}
+section h4,
+section h5,
+section h6 {
+  color: var(--hs-muted);
+}
+
+/* ===== リードスライド（表紙・章扉） ===== */
+section.lead {
+  background: linear-gradient(140deg, #ffffff 0%, var(--hs-bg-soft) 100%);
+  justify-content: center;
+  text-align: center;
+}
+section.lead h1 {
+  border: none;
+  padding: 0;
+  font-size: 2.1em;
+  color: var(--hs-accent);
+}
+section.lead h2 {
+  border: none;
+  padding: 0;
+  font-size: 1.6em;
+}
+section.lead p,
+section.lead ul {
+  color: var(--hs-muted);
+  list-style: none;
+}
+
+/* 章扉（大きな番号つき） */
+section.chapter {
+  background: linear-gradient(140deg, var(--hs-bg-soft) 0%, #ffffff 100%);
+  justify-content: center;
+  text-align: center;
+}
+section.chapter h1 {
+  border: none;
+  padding: 0;
+  font-size: 2.3em;
+  color: var(--hs-fg);
+}
+section.chapter h2 {
+  border: none;
+  padding: 0;
+  color: var(--hs-accent);
+  letter-spacing: 0.15em;
+  font-size: 1.0em;
+}
+
+/* ===== テキスト装飾 ===== */
+section a {
+  color: var(--hs-accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+section strong {
+  color: var(--hs-accent);
+}
+section em {
+  color: var(--hs-accent-2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ===== ヘッダー / フッター / ページ番号 ===== */
+section header {
+  color: var(--hs-muted);
+  font-size: 0.5em;
+}
+section footer {
+  color: var(--hs-muted);
+  font-size: 0.5em;
+}
+section::after {
+  color: var(--hs-muted);
+  font-size: 0.55em;
+}
+
+/* ===== リスト ===== */
+section ul,
+section ol {
+  line-height: 1.6;
+}
+section ul > li::marker {
+  color: var(--hs-accent);
+}
+section ol > li::marker {
+  color: var(--hs-accent);
+  font-weight: 700;
+}
+
+/* ===== テーブル ===== */
+section table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.85em;
+}
+section th {
+  background: var(--hs-accent);
+  color: #ffffff;
+  border: 1px solid var(--hs-accent);
+}
+section td {
+  background: #ffffff;
+  color: var(--hs-fg);
+  border: 1px solid var(--hs-line);
+}
+section tbody tr:nth-child(even) td {
+  background: var(--hs-bg-soft);
+}
+section th,
+section td {
+  padding: 0.45em 0.7em;
+  text-align: left;
+}
+
+/* ===== コード ===== */
+section code {
+  background: var(--hs-bg-soft);
+  color: #0b6f6b;
+  border: 1px solid var(--hs-line);
+  border-radius: 4px;
+  padding: 0.05em 0.3em;
+  font-size: 0.9em;
+}
+section pre {
+  background: var(--hs-bg-soft);
+  border: 1px solid var(--hs-line);
+  border-left: 4px solid var(--hs-accent);
+  border-radius: 6px;
+}
+section pre code {
+  background: transparent;
+  border: none;
+  color: var(--hs-fg);
+  padding: 0;
+  font-size: 0.85em;
+}
+
+/* ===== 引用（メモ・補足） ===== */
+section blockquote {
+  background: var(--hs-bg-soft);
+  border-left: 5px solid var(--hs-accent-2);
+  border-radius: 0 6px 6px 0;
+  color: var(--hs-fg);
+  margin: 0.6em 0;
+  padding: 0.6em 1em;
+}
+section blockquote::before,
+section blockquote::after {
+  content: none;
+}
+
+/* ===== ユーティリティ ===== */
+
+/* 注意・警告スライド */
+section.warn {
+  background: linear-gradient(140deg, #fffaf4 0%, #ffffff 100%);
+}
+section.warn h1,
+section.warn h2 {
+  border-color: var(--hs-warn);
+  color: var(--hs-danger);
+}
+
+/* 演習スライド（ハンズオンで手を動かすところ） */
+section.exercise h2 {
+  border-left-color: var(--hs-accent-2);
+}
+section.exercise::before {
+  content: "HANDS-ON";
+  position: absolute;
+  top: 26px;
+  right: 40px;
+  font-size: 0.5em;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--hs-accent-2);
+  border-radius: 999px;
+  padding: 0.25em 0.9em;
+}
+
+/* 2カラム */
+section.columns > div.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+}
+
+/* 文字を小さめに */
+section.small {
+  font-size: 0.85em;
+}
