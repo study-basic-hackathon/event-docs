@@ -237,3 +237,8 @@ section.columns > div.cols {
 section.small {
   font-size: 0.85em;
 }
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
