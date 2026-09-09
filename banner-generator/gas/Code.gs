@@ -4,7 +4,7 @@
  * index.html（本体、約1.3MB）は一切返さず、ログインフォームだけを返す。
  */
 
-var PROP_KEY = 'MOKUMOKU_PASSWORD';
+var PROP_KEY = 'MOKUMOKU_PASSWORD'; // 名残の名前だが、既存プロジェクトで設定済みのパスワードをそのまま使うためキー名は変更していない
 
 function doGet(e) {
   return renderGate_(e, false);
@@ -21,13 +21,13 @@ function renderGate_(e, isPost) {
 
   if (attempted && supplied === expected) {
     return HtmlService.createHtmlOutputFromFile('index')
-      .setTitle('もくもく会バナー ジェネレーター')
+      .setTitle('イベントバナー ジェネレーター')
       .addMetaTag('viewport', 'width=device-width, initial-scale=1')
       .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
   }
 
   return HtmlService.createHtmlOutput(gateHtml_(attempted))
-    .setTitle('もくもく会バナー ジェネレーター')
+    .setTitle('イベントバナー ジェネレーター')
     .addMetaTag('viewport', 'width=device-width, initial-scale=1')
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
@@ -64,7 +64,7 @@ function gateHtml_(showError) {
   var errorMessage = showError ? 'パスワードが違います。' : '';
   return '<!DOCTYPE html>' +
     '<html lang="ja"><head><meta charset="UTF-8">' +
-    '<title>もくもく会バナー ジェネレーター</title>' +
+    '<title>イベントバナー ジェネレーター</title>' +
     '<style>' +
     'body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;' +
     'background:#1c315e;font-family:"Noto Sans JP","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;}' +
